@@ -1,0 +1,42 @@
+body{
+  background-color: #1c2739;
+  /* background-color: #374151; */
+  color: white;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Nunito Sans", sans-serif;
+  
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 14px;
+  overflow-x: hidden;
+
+
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1c2739; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #233b62; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #101e35; 
+}
+
+
+
+.highlight {
+  color: blue; /* Change the color as needed */
+}

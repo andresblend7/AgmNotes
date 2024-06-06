@@ -1,0 +1,172 @@
+
+.brand{
+  padding-top: 9%;
+  padding-left: 1.2rem;
+  padding-bottom: 6%;
+  font-weight: bolder;
+  color: rgba(200, 255, 0, 0.689);
+  font-size: 1.6rem;
+  border-bottom: 1px solid #283246;
+}
+
+.page{
+  width: 80%;
+  margin: auto;
+}
+.ce-inline-toolbar, .ce-conversion-toolbar, .ce-conversion-tool__icon  {
+  background-color: #152032;
+}
+
+.ce-conversion-tool:hover {
+  background: #374862;
+}
+
+
+.ce-inline-tool:hover {
+  background-color: #374862;
+  color: white;
+}
+.ce-inline-toolbar__dropdown:hover {
+  background-color: #374862;
+  color: white;
+}
+
+/* TABLE */
+.tc-popover, .tc-row--selected, .tc-cell--selected {
+  background-color: transparent !important;
+} 
+
+
+.tc-add-column:hover, .tc-add-row:hover {
+    background-color: #314a71 !important;
+}
+
+
+/* CODE */
+.ce-code__textarea {
+  background-color: #151d2a !important;
+  color: rgba(255, 255, 255, 0.66) !important;
+}
+
+
+/* DELIMITER */
+.ce-delimiter:before{
+  content: none !important;
+}
+
+/* MARKER */
+.cdx-marker {
+  background: rgb(255 169 24 / 87%) !important;
+  padding: 0px 4px !important;
+}
+
+.ce-delimiter {
+  padding-top: 2%;
+  margin-bottom: 2% !important;
+  margin: auto;
+  border-bottom: 2px solid #334462;
+  width: 75% !important;
+}
+
+.ce-block__content,
+.ce-toolbar__content {
+  max-width: 90%;
+}
+
+.ce-toolbar__plus, .ce-toolbar__settings-btn {
+  color: #ffffff;
+  background-color: #283246;
+}
+
+.ce-toolbar__plus:hover, .ce-toolbar__settings-btn:hover {
+  color: #ffffff;
+  background-color: #121721;
+}
+
+
+.ce-block--selected .ce-block__content {
+  background: #3a4c6ecf;
+}
+
+.cdx-checklist__item-checkbox {
+  padding-left: 20px;
+}
+
+.cdx-checklist__item-checkbox-check  {
+  background: #ffffff19 !important;
+}
+
+.cdx-alert-danger {
+  background-color: #fff5f500 !important;
+  border: 1px solid #e70000 !important;
+  color: #ff4141 !important;
+}
+.sidebar {
+  height: 100vh; /* 100% de la altura de la ventana */
+  width: 250px;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.774) !important;
+  padding: 0;
+  position: fixed; /* Fijo al lado izquierdo */
+  top: 0;
+  left: 0;
+  overflow-y: auto; 
+  font-size: 0.8rem;/* Añadido para permitir desplazamiento si el contenido es más alto que la ventana */
+}
+.sidebar {
+  height: 100vh; /* 100% de la altura de la ventana */
+  width: 250px;
+  background-color: #152032;/* #1c2739;*/
+  border-right: 1px solid #3a4c6ecf;
+  color: white;
+  padding: 0;
+  position: fixed; /* Fijo al lado izquierdo */
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Añadido para permitir desplazamiento si el contenido es más alto que la ventana */
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 2.2rem 0 0 0;
+  margin: 0;
+}
+.sidebar li {
+  padding: 6px 16px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.35em;
+  width: 82%;
+  margin: auto;
+
+}
+.sidebar li:hover {
+  background-color: #374862;
+  color: white;
+}
+.sidebar li ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: auto;
+  background-color: #374862;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.sidebar li ul :hover {
+  background-color: #4d607c;
+  color: white;
+
+}
+.sidebar li:hover ul {
+  max-height: 200px; /* Ajusta esto dependiendo del contenido */
+}
+.sidebar li ul li {
+  padding: 6px 16px; /* Indentación para los subelementos */
+}
+.content {
+  margin-left: 250px; /* Espacio para el sidebar */
+  padding: 20px;
+  width: calc(100% - 250px); /* Ancho del contenido */
+  overflow-y: hidden;
+}
