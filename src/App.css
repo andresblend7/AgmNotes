@@ -13,6 +13,35 @@
   width: 80%;
   margin: auto;
 }
+.page-title{
+  border-bottom: 1px solid #3a4c6ecf;
+  padding-bottom: 1.6rem;
+  color: rgb(0 227 255 / 88%);
+}
+
+.btn-actions{
+  margin-top: 10%;
+}
+
+.btn-add{
+  color: #89a3c9;
+  display: block;
+  width:80% !important;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.add-icon{
+  float: right;
+  padding:2px 3px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.add-icon:hover{
+  background-color: #283246;
+}
+
 .ce-inline-toolbar, .ce-conversion-toolbar, .ce-conversion-tool__icon  {
   background-color: #152032;
 }
@@ -31,12 +60,18 @@
   color: white;
 }
 
+/* PARRAGRAPH */
+
+.ce-paragraph.cdx-block {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
 /* TABLE */
 .tc-popover, .tc-row--selected, .tc-cell--selected {
   background-color: transparent !important;
 } 
-
-
 .tc-add-column:hover, .tc-add-row:hover {
     background-color: #314a71 !important;
 }
@@ -58,6 +93,55 @@
 .cdx-marker {
   background: rgb(255 169 24 / 87%) !important;
   padding: 0px 4px !important;
+}
+
+/* TOGGLE */
+svg.bi.bi-play-fill {
+  color: rgb(255 169 24 / 87%) !important;
+  width: 18px !important;
+}
+
+.toggle-block__input {
+  color: rgba(251, 159, 0, 0.87) !important;
+}
+
+/* UL'S */
+ul.cdx-block.cdx-list.cdx-list--unordered  {
+  list-style-type: none; /* Para eliminar el marcador de lista predeterminado */
+}
+
+ul.cdx-block.cdx-list.cdx-list--unordered > li::before {
+  content: "\003E"; /* Código de Unicode para un círculo sólido (•) */
+  color: rgb(0, 204, 255); /* Color del marcador de lista */
+  font-size: 1.2em; /* Tamaño de fuente del marcador de lista */
+  margin-right: 0.5em; /* Espacio entre el marcador y el texto */
+}
+
+ul.cdx-block.cdx-list.cdx-list--unordered>li{
+  padding: 0 6px;
+}
+
+
+/* UL'S NESTED */
+ul.cdx-nested-list--unordered {
+  list-style-type: none; /* Para eliminar el marcador de lista predeterminado */
+}
+
+ul.cdx-nested-list--unordered > li::before {
+  content: "\003E"; /* Código de Unicode para un círculo sólido (•) */
+  color: rgb(0, 204, 255); /* Color del marcador de lista */
+  font-size: 1.2em; /* Tamaño de fuente del marcador de lista */
+  margin-right: 0.5em; /* Espacio entre el marcador y el texto */
+}
+
+ul.cdx-nested-list--unordered>li{
+  padding: 0 6px;
+}
+
+/* OL'S */
+li.cdx-list__item {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .ce-delimiter {
@@ -127,7 +211,7 @@
 }
 .sidebar ul {
   list-style-type: none;
-  padding: 2.2rem 0 0 0;
+  padding: 0.4rem 0 0 0;
   margin: 0;
 }
 .sidebar li {
