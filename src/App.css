@@ -16,7 +16,7 @@
 .page-title{
   border-bottom: 1px solid #3a4c6ecf;
   padding-bottom: 1.6rem;
-  color: rgb(0 227 255 / 88%);
+  color: #43d1e0;
 }
 
 .btn-actions{
@@ -119,6 +119,7 @@ ul.cdx-block.cdx-list.cdx-list--unordered > li::before {
 
 ul.cdx-block.cdx-list.cdx-list--unordered>li{
   padding: 0 6px;
+  line-height: 1.5em;
 }
 
 
@@ -136,6 +137,7 @@ ul.cdx-nested-list--unordered > li::before {
 
 ul.cdx-nested-list--unordered>li{
   padding: 0 6px;
+  line-height: 1.5em;
 }
 
 /* OL'S */
@@ -172,12 +174,19 @@ li.cdx-list__item {
   background: #3a4c6ecf;
 }
 
+/* CHECKS */
+
 .cdx-checklist__item-checkbox {
   padding-left: 20px;
 }
 
 .cdx-checklist__item-checkbox-check  {
   background: #ffffff19 !important;
+}
+
+.cdx-checklist__item--checked > .cdx-checklist__item-text{
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.63);
 }
 
 .cdx-alert-danger {
